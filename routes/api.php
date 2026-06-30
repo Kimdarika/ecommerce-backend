@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('v1')->group(function () {
     Route::get('/categories', [ProductController::class, 'categories']);
     Route::get('/products', [ProductController::class, 'index']);
-    Route::get('/products/{id}', [ProductController::class, 'show']);
+    Route::get('/products/{product}', [ProductController::class, 'show']);
     Route::get('/search', [ProductController::class, 'search']);
     Route::post('/v1/login', [AuthController::class, 'login']);
 

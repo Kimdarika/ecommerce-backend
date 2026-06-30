@@ -705,7 +705,7 @@
             <div class="brand-icon">
                 <i class="fas fa-store"></i>
             </div>
-            <h5>Glow <span>Beauty</span></h5>
+            <h5>Chhouk<span>Shop</span></h5>
         </div>
 
         <!-- Navigation - Scrollable -->
