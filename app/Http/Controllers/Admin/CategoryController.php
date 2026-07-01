@@ -14,12 +14,12 @@ class CategoryController extends Controller
         $categories = Category::withCount('products')->latest()->paginate(10);
         return view('admin.categories.index', compact('categories'));
     }
-
+    
     public function create()
     {
         return view('admin.categories.create');
     }
-
+    
     public function store(Request $request)
     {
         $request->validate([

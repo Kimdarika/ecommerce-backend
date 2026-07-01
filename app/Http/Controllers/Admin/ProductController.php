@@ -29,7 +29,6 @@ class ProductController extends Controller
 
         return view('admin.products.show', compact('product'));
     }
-
     public function store(Request $request)
     {
         $request->validate([
@@ -72,7 +71,7 @@ class ProductController extends Controller
         $categories = Category::all();
         return view('admin.products.edit', compact('product', 'categories'));
     }
-
+    
     public function update(Request $request, Product $product)
     {
         $request->validate([
